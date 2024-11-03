@@ -36,5 +36,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
-         skopeo copy docker://docker.io/flannel/flannel:v0.21.5 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/flannel:v0.21.5
+         skopeo copy docker://docker.io/flannel/flannel-cni-plugin:v1.1.2 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/flannel-cni-plugin:v1.1.2
          

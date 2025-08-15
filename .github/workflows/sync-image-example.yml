@@ -40,4 +40,5 @@ jobs:
         # skopeo copy docker://ghcr.io/kubernetes/minikube/kicbase:v0.0.42 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/kicbase:v0.0.42
         # skopeo copy docker://docker.io/library/node:22.17.1 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/node:22.17.1
         # skopeo copy docker://docker.io/library/python:3.9.23 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/python:3.9.23
-        skopeo copy docker://nvidia/cuda:12.1.1-devel-ubuntu20.04 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:12.1.1-devel-ubuntu20.04
+        # skopeo copy docker://nvidia/cuda:12.1.1-devel-ubuntu20.04 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:12.1.1-devel-ubuntu20.04
+         skopeo copy docker://pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/pytorch:1.12.1-cuda11.3-cudnn8-devel

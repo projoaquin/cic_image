@@ -42,8 +42,13 @@ jobs:
         # skopeo copy docker://docker.io/library/python:3.9.23 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/python:3.9.23
         # skopeo copy docker://nvidia/cuda:12.1.1-devel-ubuntu20.04 docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:12.1.1-devel-ubuntu20.04
         # skopeo copy docker://pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/pytorch:1.12.1-cuda11.3-cudnn8-devel
+        # skopeo copy \
+        # --override-arch=amd64 \
+        # --override-os=linux \
+        # docker://docker.io/library/python:3.9.23-slim \
+        # docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/python:3.9.23-slim
         skopeo copy \
         --override-arch=amd64 \
         --override-os=linux \
-        docker://docker.io/library/python:3.9.23-slim \
-        docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/python:3.9.23-slim
+        docker://nvidia/cuda:11.3.1-devel-ubuntu20.04 \
+        docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:11.3.1-devel-ubuntu20.04

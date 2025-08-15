@@ -47,8 +47,13 @@ jobs:
         # --override-os=linux \
         # docker://docker.io/library/python:3.9.23-slim \
         # docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/python:3.9.23-slim
+        # skopeo copy \
+        # --override-arch=amd64 \
+        # --override-os=linux \
+        # docker://nvidia/cuda:11.3.1-devel-ubuntu20.04 \
+        # docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:11.3.1-devel-ubuntu20.04
         skopeo copy \
         --override-arch=amd64 \
         --override-os=linux \
-        docker://nvidia/cuda:11.3.1-devel-ubuntu20.04 \
-        docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:11.3.1-devel-ubuntu20.04
+        docker://nvidia/cuda:11.1.1-devel-ubuntu20.04 \
+        docker://crpi-5uuk3fufmxjvtp4x.cn-shanghai.personal.cr.aliyuncs.com/cic_image/cuda:11.1.1-devel-ubuntu20.04
